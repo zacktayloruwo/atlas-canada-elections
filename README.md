@@ -4,7 +4,7 @@ Provincial general elections in Canada since 1867: every contest and every candi
 
 **Site:** https://zacktayloruwo.github.io/atlas-canada-elections/
 
-This repository holds the published site: a static web app (Svelte, DuckDB-WASM) and the data it reads. It is written by the publish step of the Provincial Elections Dataset (PED) pipeline; nothing is edited here by hand. Build `20260923T175732Z`, pipeline commit `bba8a18`, built 2026-09-23T17:57:32Z.
+This repository holds the published site: a static web app (Svelte, DuckDB-WASM) and the data it reads. It is written by the publish step of the Provincial Elections Dataset (PED) pipeline; nothing is edited here by hand. Build `20260923T194451Z`, pipeline commit `75a255c`, built 2026-09-23T19:44:51Z.
 
 ## Using the data
 
@@ -28,13 +28,13 @@ Vote measures are never mixed: `votes_first` and `share_first` are first counts;
 | `provinces.parquet` | 10 | prabbr, name_en, name_fr, proj4, snap_tol_m, first_eyear, last_eyear, n_elections |
 | `elections.parquet` | 381 | prabbr, eyear, election_date, structure, ballots, formula, n_dist_expected, n_seats_expected, authority, n_dist_returned, n_contests, n_seats_returned, ro_year, has_geometry |
 | `districts.parquet` | 21,250 | pedid, prabbr, eyear, pedname_en, pedname_fr, district_base, ballot, geo_role, geo_id, lineage_id, n_contests_on_polygon, magnitude, n_candidates, formula, contested, acclaimed, unfilled, votes_total, votes_total_final, electorate, turnout_pct, margin_first, margin_final, margin_measure, winner_family, seat_split, quality, n_sources |
-| `candidates.parquet` | 75,162 | pedid, prabbr, eyear, cluster_id, name, name_key, person_key, link_basis, party_raw, family, family2, votes_first, votes_final, votes_final_source, share_first, share_final, rank_first, rank_final, elected, quality, slug |
-| `seats.parquet` | 22,851 | pedid, prabbr, eyear, cluster_id, seat_index, family, family2 |
-| `parties.parquet` | 296 | family, label_en, label_fr, colour_light, colour_dark, pattern, sort_order, n_rows, n_seats, tier |
-| `party_labels.parquet` | 901 | prabbr, party_raw, family, family2, first_eyear, last_eyear, n |
+| `candidates.parquet` | 75,161 | pedid, prabbr, eyear, cluster_id, name, name_key, person_key, link_basis, party_raw, party_source, family, family2, votes_first, votes_final, votes_final_source, share_first, share_final, rank_first, rank_final, elected, quality, slug |
+| `seats.parquet` | 22,853 | pedid, prabbr, eyear, cluster_id, seat_index, family, family2 |
+| `parties.parquet` | 295 | family, label_en, label_fr, colour_light, colour_dark, pattern, sort_order, n_rows, n_seats, tier |
+| `party_labels.parquet` | 901 | prabbr, party_raw, family, family2, first_eyear, last_eyear, n, sources |
 | `vacancies.parquet` | 1 | prabbr, eyear, district_name, reason, filled_by, citation |
 | `sources.parquet` | 43 | src_abbr, title, publisher, years, provinces, type, url, status, rank, note, citation_en, citation_fr |
-| `search_index.parquet` | 104,583 | type, prabbr, display_en, display_fr, key_norm, route |
+| `search_index.parquet` | 104,581 | type, prabbr, display_en, display_fr, key_norm, route |
 | `geo_index.parquet` | 9,273 | geo_id, prabbr, ro_year, pednum, pedname, geo_role, bbox_xmin, bbox_ymin, bbox_xmax, bbox_ymax, centroid_x, centroid_y, ov_centroid_x, ov_centroid_y, areakm_net |
 | `geo_join.parquet` | 19,346 | pedid, prabbr, eyear, geo_id, geo_role, join_basis |
 | `geo_orphans.parquet` | 1,918 | side, prabbr, eyear, ro_year, name, id, reason |
@@ -50,4 +50,4 @@ Every source is described on the site's About page, with citation and publisher,
 
 ## Citing
 
-Taylor, Zack. *Atlas of Canadian Elections: provincial elections in Canada since 1867.* Build 20260923T175732Z. Western University.
+Taylor, Zack. *Atlas of Canadian Elections: provincial elections in Canada since 1867.* Build 20260923T194451Z. Western University.

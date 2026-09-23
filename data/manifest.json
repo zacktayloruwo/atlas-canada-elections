@@ -1,32 +1,32 @@
 {
-  "build_id": "20260923T175732Z",
-  "built_at": "2026-09-23T17:57:32Z",
-  "pipeline_commit": "bba8a18",
+  "build_id": "20260923T194451Z",
+  "built_at": "2026-09-23T19:44:51Z",
+  "pipeline_commit": "75a255c",
   "schema_version": 1,
   "fixture": false,
   "provinces": ["AB", "BC", "MB", "NB", "NL", "NS", "ON", "PE", "QC", "SK"],
   "steps": {
     "P01": {
-      "build_id": "20260923T175042Z",
-      "built_at": "2026-09-23T17:50:42Z",
-      "pipeline_commit": "bba8a18"
+      "build_id": "20260923T193759Z",
+      "built_at": "2026-09-23T19:37:59Z",
+      "pipeline_commit": "75a255c"
     },
     "P02": {
-      "build_id": "20260923T175053Z",
-      "built_at": "2026-09-23T17:50:53Z",
-      "pipeline_commit": "bba8a18"
+      "build_id": "20260923T193810Z",
+      "built_at": "2026-09-23T19:38:10Z",
+      "pipeline_commit": "75a255c"
     },
     "P03": {
-      "build_id": "20260923T175732Z",
-      "built_at": "2026-09-23T17:57:32Z",
-      "pipeline_commit": "bba8a18"
+      "build_id": "20260923T194451Z",
+      "built_at": "2026-09-23T19:44:51Z",
+      "pipeline_commit": "75a255c"
     }
   },
   "tables": {
     "provinces": {
       "rows": 10,
       "bytes": 3899,
-      "sha256": "1bf95ab8ccb20fdfd7f95ac2f38c1c5ab9b5438ce6b6e3c04a98df7fa21c0c79",
+      "sha256": "f0fd02a5e2009429ecf35ba58cfde8aa66b89a684d9fc68c7aac70d08d19cb34",
       "columns": [
         "prabbr",
         "name_en",
@@ -40,8 +40,8 @@
     },
     "elections": {
       "rows": 381,
-      "bytes": 8420,
-      "sha256": "bb42ccc719bde8f0dbf7b49605271fd376028a174c4ef590c6206473ea705b52",
+      "bytes": 8411,
+      "sha256": "ebe59bf5b4d3698a11069c788ac0d2cd34c6b70947ca86b7f9030c9861079328",
       "columns": [
         "prabbr",
         "eyear",
@@ -61,20 +61,20 @@
     },
     "districts": {
       "rows": 21250,
-      "bytes": 810730,
-      "sha256": "fd923c3ae57bceaead0c6f2accd44bb5080bb23344c7217036bda6d45039e4d7",
+      "bytes": 810784,
+      "sha256": "c60684a022d29075da00d592e63641d59e58bd552303eb8f583f5c0623fca0b7",
       "columns": ["pedid", "prabbr", "eyear", "pedname_en", "pedname_fr", "district_base", "ballot", "geo_role", "geo_id", "lineage_id", "n_contests_on_polygon", "magnitude", "n_candidates", "formula", "contested", "acclaimed", "unfilled", "votes_total", "votes_total_final", "electorate", "turnout_pct", "margin_first", "margin_final", "margin_measure", "winner_family", "seat_split", "quality", "n_sources"]
     },
     "candidates": {
-      "rows": 75162,
-      "bytes": 3137777,
-      "sha256": "e365b735e2123461c7b9be4f923098b52f4183be1eb953b33ccafe3624418321",
-      "columns": ["pedid", "prabbr", "eyear", "cluster_id", "name", "name_key", "person_key", "link_basis", "party_raw", "family", "family2", "votes_first", "votes_final", "votes_final_source", "share_first", "share_final", "rank_first", "rank_final", "elected", "quality", "slug"]
+      "rows": 75161,
+      "bytes": 3143666,
+      "sha256": "adf7b88c24ab224a2508b95b5842964615e11b77a977ab1bb57568217d9818e2",
+      "columns": ["pedid", "prabbr", "eyear", "cluster_id", "name", "name_key", "person_key", "link_basis", "party_raw", "party_source", "family", "family2", "votes_first", "votes_final", "votes_final_source", "share_first", "share_final", "rank_first", "rank_final", "elected", "quality", "slug"]
     },
     "seats": {
-      "rows": 22851,
-      "bytes": 94854,
-      "sha256": "792e72a4ac2a7a0f4a8789afe890ed48040abc1aa9212bb7729850c961ffe9e1",
+      "rows": 22853,
+      "bytes": 94938,
+      "sha256": "18120c2ab41febaaf1faad4fdb28506060c5652ea711c891b2515e75da6abeaa",
       "columns": [
         "pedid",
         "prabbr",
@@ -86,9 +86,9 @@
       ]
     },
     "parties": {
-      "rows": 296,
-      "bytes": 14588,
-      "sha256": "e47b7ace960e36c56964bda24599395e890ef37a2bf72e26a4508d34db3ede40",
+      "rows": 295,
+      "bytes": 14573,
+      "sha256": "d1bca444f8d50be8505ed51fb5215552d5ba33492065f435fd9929e8d881722e",
       "columns": [
         "family",
         "label_en",
@@ -104,8 +104,8 @@
     },
     "party_labels": {
       "rows": 901,
-      "bytes": 20306,
-      "sha256": "564376163c149e147d6522f11f664b356f516cff754fb654689db0b9d6658745",
+      "bytes": 21485,
+      "sha256": "605bb9dbc7eba9a995f3eca2e154ccffcd9533aa9b40bcb010aa05263ae6bda8",
       "columns": [
         "prabbr",
         "party_raw",
@@ -113,13 +113,14 @@
         "family2",
         "first_eyear",
         "last_eyear",
-        "n"
+        "n",
+        "sources"
       ]
     },
     "vacancies": {
       "rows": 1,
       "bytes": 5929,
-      "sha256": "6ece1f28fee1f224d404d00bf7b46d6f4533b39413caf8efff748d4afdc344ce",
+      "sha256": "9f8a2489f31bff27045ee26933fd43960620cde01887eb6f16c1a1a62ad1417a",
       "columns": [
         "prabbr",
         "eyear",
@@ -132,7 +133,7 @@
     "sources": {
       "rows": 43,
       "bytes": 16061,
-      "sha256": "5d87c51755c38bd1a39b0fcd51fbd9288d2f99687a21b32bbe3125999af0ec52",
+      "sha256": "bf432b38acff96e20fc35f97429c9bed52df26af0881449ef8c3a351f55e296a",
       "columns": [
         "src_abbr",
         "title",
@@ -149,15 +150,15 @@
       ]
     },
     "search_index": {
-      "rows": 104583,
-      "bytes": 4516071,
-      "sha256": "d6d7a0293caffe43ce28c3f1cea97043fc2886180063f7865d5f462b0ac458f0",
+      "rows": 104581,
+      "bytes": 4516051,
+      "sha256": "e045bd51ce62f7f7556377af05bf667afb7e870c7f33673f377ee4f5e68f45e9",
       "columns": ["type", "prabbr", "display_en", "display_fr", "key_norm", "route"]
     },
     "geo_index": {
       "rows": 9273,
       "bytes": 623954,
-      "sha256": "5b32b4ab4f1a7ad1c2b6ca3ee0dd41f0b682a9a711feea9ebbd91d2ae6af2431",
+      "sha256": "c856d19340efa458a49296a88db695ec5279c611a2219b6468519be2f0f4b110",
       "columns": [
         "geo_id",
         "prabbr",
@@ -179,7 +180,7 @@
     "geo_join": {
       "rows": 19346,
       "bytes": 99318,
-      "sha256": "e4831a0d3888dd3087b6d1e73a3c11eecceb84d02d7915a1be872c2ab37b1754",
+      "sha256": "1d5cf9db4c8013fd97b0375686f3b263272fc473d375f34286ab84a1ac0b7ce5",
       "columns": [
         "pedid",
         "prabbr",
@@ -192,7 +193,7 @@
     "geo_orphans": {
       "rows": 1918,
       "bytes": 12273,
-      "sha256": "05bc7dcc68505f7c3eda23a36fefd0b79ecb0b634797358abff6c5426f3290a0",
+      "sha256": "70256c5ab05778e60163e4e07852059d7fa6f8b93c044326622565c17ace92ff",
       "columns": [
         "side",
         "prabbr",
@@ -206,19 +207,19 @@
     "era_crosswalk": {
       "rows": 14579,
       "bytes": 464510,
-      "sha256": "9805e5e9bbebfe84020ec24d6771c43b327acace938f6ccc4eb43b849a898b28",
+      "sha256": "eda5286a62af2b9a12f2ed13d7d6cce3ca0c1656c1e8115ab6b2648036630a4d",
       "columns": ["prabbr", "ro_from", "ro_to", "geo_id_from", "geo_id_to", "area_km2", "frac_of_from", "frac_of_to", "same_lineage"]
     },
     "geo_neighbours": {
       "rows": 21147,
       "bytes": 93858,
-      "sha256": "31c6fc88ab221a7a9abc08d299155261e8e5ef97a8fd1b592f4ea4808a493cf8",
+      "sha256": "f489c6900ac18a7ff64179323af77dec23ad0bdeb45160b73a7ce6c6ce103c60",
       "columns": ["prabbr", "ro_year", "geo_id_a", "geo_id_b"]
     },
     "lineages": {
       "rows": 2098,
       "bytes": 90855,
-      "sha256": "f482740d3100971e1ea47ca47816386ca719d6b06258548f2895e6eb4eaf7990",
+      "sha256": "dfb3a98fb36fd7ef813888e3a7f3081937466e6604e1e5dccfc0217d5d2eddcf",
       "columns": ["lineage_id", "prabbr", "first_eyear", "last_eyear", "n_contests", "n_elections", "n_branches_max", "names_en", "names_fr", "lineage_basis", "has_floterial", "n_eras", "n_polygons"]
     }
   },
@@ -231,7 +232,7 @@
     "review/atlas/district_names_fr.csv": "2026-09-23T00:25:39Z",
     "review/atlas/election_dates.csv": "2026-09-23T00:25:39Z",
     "review/atlas/floterial_districts.csv": "2026-09-23T00:30:56Z",
-    "review/atlas/party_families.csv": "2026-09-23T00:25:39Z",
+    "review/atlas/party_families.csv": "2026-09-23T19:27:41Z",
     "review/atlas/province_projections.csv": "2026-09-23T01:13:49Z",
     "review/electoral_systems/electoral_structure.csv": "2026-08-26T11:11:39Z",
     "review/electoral_systems/expected_legislature_size.csv": "2026-09-16T10:26:53Z",
@@ -248,20 +249,20 @@
     "processed/MB_03 comparison/MB_ALLYEARS_table2_candidate.csv": "2026-09-18T23:03:11Z",
     "processed/NL_03 comparison/NL_ALLYEARS_table1_district.csv": "2026-09-18T23:12:38Z",
     "processed/NL_03 comparison/NL_ALLYEARS_table2_candidate.csv": "2026-09-18T23:12:38Z",
-    "processed/NS_03 comparison/NS_ALLYEARS_table1_district.csv": "2026-09-23T17:33:19Z",
-    "processed/NS_03 comparison/NS_ALLYEARS_table2_candidate.csv": "2026-09-23T17:33:19Z",
+    "processed/NS_03 comparison/NS_ALLYEARS_table1_district.csv": "2026-09-23T19:01:15Z",
+    "processed/NS_03 comparison/NS_ALLYEARS_table2_candidate.csv": "2026-09-23T19:01:15Z",
     "processed/ON_03 comparison/ON_ALLYEARS_table1_district.csv": "2026-09-23T15:48:21Z",
     "processed/ON_03 comparison/ON_ALLYEARS_table2_candidate.csv": "2026-09-23T15:48:21Z",
     "processed/QC_03 comparison/QC_ALLYEARS_table1_district.csv": "2026-09-23T12:02:16Z",
     "processed/QC_03 comparison/QC_ALLYEARS_table2_candidate.csv": "2026-09-23T12:02:16Z",
     "processed/SK_03 comparison/SK_ALLYEARS_table1_district.csv": "2026-09-18T23:01:46Z",
     "processed/SK_03 comparison/SK_ALLYEARS_table2_candidate.csv": "2026-09-18T23:01:46Z",
-    "review/party_family_lookup/AB_party_family_lookup.xlsx": "2026-08-29T19:53:35Z",
-    "review/party_family_lookup/BC_party_family_lookup.xlsx": "2026-08-21T00:24:35Z",
-    "review/party_family_lookup/MB_party_family_lookup.xlsx": "2026-09-16T17:53:56Z",
+    "review/party_family_lookup/AB_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
+    "review/party_family_lookup/BC_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
+    "review/party_family_lookup/MB_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
     "review/party_family_lookup/NL_party_family_lookup.xlsx": "2026-09-22T19:48:59Z",
-    "review/party_family_lookup/NS_party_family_lookup.xlsx": "2026-09-23T16:22:15Z",
-    "review/party_family_lookup/ON_party_family_lookup.xlsx": "2026-09-17T21:10:29Z",
+    "review/party_family_lookup/NS_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
+    "review/party_family_lookup/ON_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
     "review/party_family_lookup/QC_party_family_lookup.xlsx": "2026-08-26T14:29:27Z",
     "review/party_family_lookup/SK_party_family_lookup.xlsx": "2026-09-22T19:48:59Z",
     "processed/representation_orders/gpkg/PE_ro1873.gpkg": "2026-08-20T16:24:37Z",
