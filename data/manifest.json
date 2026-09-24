@@ -1,32 +1,32 @@
 {
-  "build_id": "20260923T194451Z",
-  "built_at": "2026-09-23T19:44:51Z",
-  "pipeline_commit": "75a255c",
+  "build_id": "20260924T011050Z",
+  "built_at": "2026-09-24T01:10:50Z",
+  "pipeline_commit": "9c516bd",
   "schema_version": 1,
   "fixture": false,
   "provinces": ["AB", "BC", "MB", "NB", "NL", "NS", "ON", "PE", "QC", "SK"],
   "steps": {
     "P01": {
-      "build_id": "20260923T193759Z",
-      "built_at": "2026-09-23T19:37:59Z",
-      "pipeline_commit": "75a255c"
+      "build_id": "20260924T010316Z",
+      "built_at": "2026-09-24T01:03:16Z",
+      "pipeline_commit": "9c516bd"
     },
     "P02": {
-      "build_id": "20260923T193810Z",
-      "built_at": "2026-09-23T19:38:10Z",
-      "pipeline_commit": "75a255c"
+      "build_id": "20260924T010348Z",
+      "built_at": "2026-09-24T01:03:48Z",
+      "pipeline_commit": "9c516bd"
     },
     "P03": {
-      "build_id": "20260923T194451Z",
-      "built_at": "2026-09-23T19:44:51Z",
-      "pipeline_commit": "75a255c"
+      "build_id": "20260924T011050Z",
+      "built_at": "2026-09-24T01:10:50Z",
+      "pipeline_commit": "9c516bd"
     }
   },
   "tables": {
     "provinces": {
       "rows": 10,
       "bytes": 3899,
-      "sha256": "f0fd02a5e2009429ecf35ba58cfde8aa66b89a684d9fc68c7aac70d08d19cb34",
+      "sha256": "2b5b09f46ffb2f6816f92acf921094ff43b2ff2b863f9c0bde3baa696376bad5",
       "columns": [
         "prabbr",
         "name_en",
@@ -41,7 +41,7 @@
     "elections": {
       "rows": 381,
       "bytes": 8411,
-      "sha256": "ebe59bf5b4d3698a11069c788ac0d2cd34c6b70947ca86b7f9030c9861079328",
+      "sha256": "6307ab499b06d62cc2735c7fd5cec0cccc7778e1c8ae6a4fc113e36971336466",
       "columns": [
         "prabbr",
         "eyear",
@@ -61,20 +61,20 @@
     },
     "districts": {
       "rows": 21250,
-      "bytes": 810784,
-      "sha256": "c60684a022d29075da00d592e63641d59e58bd552303eb8f583f5c0623fca0b7",
+      "bytes": 810800,
+      "sha256": "aeaa59a2ef937db09a3f0fc412866a5d971bf620828fadab681f74998d71d33e",
       "columns": ["pedid", "prabbr", "eyear", "pedname_en", "pedname_fr", "district_base", "ballot", "geo_role", "geo_id", "lineage_id", "n_contests_on_polygon", "magnitude", "n_candidates", "formula", "contested", "acclaimed", "unfilled", "votes_total", "votes_total_final", "electorate", "turnout_pct", "margin_first", "margin_final", "margin_measure", "winner_family", "seat_split", "quality", "n_sources"]
     },
     "candidates": {
       "rows": 75161,
       "bytes": 3143666,
-      "sha256": "adf7b88c24ab224a2508b95b5842964615e11b77a977ab1bb57568217d9818e2",
+      "sha256": "293672cf4e30f50d1c76db625f76c7ed17c6397fcb2ed8db95de5e937bedb111",
       "columns": ["pedid", "prabbr", "eyear", "cluster_id", "name", "name_key", "person_key", "link_basis", "party_raw", "party_source", "family", "family2", "votes_first", "votes_final", "votes_final_source", "share_first", "share_final", "rank_first", "rank_final", "elected", "quality", "slug"]
     },
     "seats": {
       "rows": 22853,
       "bytes": 94938,
-      "sha256": "18120c2ab41febaaf1faad4fdb28506060c5652ea711c891b2515e75da6abeaa",
+      "sha256": "c07660c52b3b80f409a5c681472e7905f5a00c7a1f9086ca539318428961a336",
       "columns": [
         "pedid",
         "prabbr",
@@ -88,7 +88,7 @@
     "parties": {
       "rows": 295,
       "bytes": 14573,
-      "sha256": "d1bca444f8d50be8505ed51fb5215552d5ba33492065f435fd9929e8d881722e",
+      "sha256": "f8a2f39e083fa45a36c1ed2c48696907182f04ab8c75d2e58102111e6ee4c7e9",
       "columns": [
         "family",
         "label_en",
@@ -105,7 +105,7 @@
     "party_labels": {
       "rows": 901,
       "bytes": 21485,
-      "sha256": "605bb9dbc7eba9a995f3eca2e154ccffcd9533aa9b40bcb010aa05263ae6bda8",
+      "sha256": "67d082f1cbc2dce670a156bcf135d3d0a9ba162067301af7d987180742a4e417",
       "columns": [
         "prabbr",
         "party_raw",
@@ -120,7 +120,7 @@
     "vacancies": {
       "rows": 1,
       "bytes": 5929,
-      "sha256": "9f8a2489f31bff27045ee26933fd43960620cde01887eb6f16c1a1a62ad1417a",
+      "sha256": "c8cca29eb3268279cff8c1a6e2d2542724e7dcbbac7ceda4c9cc6d4f6b8b4e9f",
       "columns": [
         "prabbr",
         "eyear",
@@ -133,7 +133,7 @@
     "sources": {
       "rows": 43,
       "bytes": 16061,
-      "sha256": "bf432b38acff96e20fc35f97429c9bed52df26af0881449ef8c3a351f55e296a",
+      "sha256": "b24f463fdb6f35e4270534b82a2a7ced6a132fb86814d5d589d43bb45bb1fc3d",
       "columns": [
         "src_abbr",
         "title",
@@ -152,13 +152,13 @@
     "search_index": {
       "rows": 104581,
       "bytes": 4516051,
-      "sha256": "e045bd51ce62f7f7556377af05bf667afb7e870c7f33673f377ee4f5e68f45e9",
+      "sha256": "c6b54f9f7fa6ade60243dce0faf7192055ef9f1b5b5562ed7847312fb630f73a",
       "columns": ["type", "prabbr", "display_en", "display_fr", "key_norm", "route"]
     },
     "geo_index": {
       "rows": 9273,
       "bytes": 623954,
-      "sha256": "c856d19340efa458a49296a88db695ec5279c611a2219b6468519be2f0f4b110",
+      "sha256": "33d92eaf43fb0273a4b5e258a0d834193e17c1af0483687954b5aff92a25a095",
       "columns": [
         "geo_id",
         "prabbr",
@@ -180,7 +180,7 @@
     "geo_join": {
       "rows": 19346,
       "bytes": 99318,
-      "sha256": "1d5cf9db4c8013fd97b0375686f3b263272fc473d375f34286ab84a1ac0b7ce5",
+      "sha256": "b407782425869422b81f3041beaa710ec6f202c1b3cc229802808a99481eaa6f",
       "columns": [
         "pedid",
         "prabbr",
@@ -193,7 +193,7 @@
     "geo_orphans": {
       "rows": 1918,
       "bytes": 12273,
-      "sha256": "70256c5ab05778e60163e4e07852059d7fa6f8b93c044326622565c17ace92ff",
+      "sha256": "1c33ada945113c6a6cee0658dc92db64c7f4dc8bc37b8db8db796a097a6cabb1",
       "columns": [
         "side",
         "prabbr",
@@ -207,27 +207,27 @@
     "era_crosswalk": {
       "rows": 14579,
       "bytes": 464510,
-      "sha256": "eda5286a62af2b9a12f2ed13d7d6cce3ca0c1656c1e8115ab6b2648036630a4d",
+      "sha256": "36edb76f96bc791899a9aa625de7a9d2d3af8ff4b1447e1c1499853e3bebba73",
       "columns": ["prabbr", "ro_from", "ro_to", "geo_id_from", "geo_id_to", "area_km2", "frac_of_from", "frac_of_to", "same_lineage"]
     },
     "geo_neighbours": {
       "rows": 21147,
       "bytes": 93858,
-      "sha256": "f489c6900ac18a7ff64179323af77dec23ad0bdeb45160b73a7ce6c6ce103c60",
+      "sha256": "7ac0172708eeb0093e8308964fbc599a6dd7bab3dd85bd7d9660564f4bc387fc",
       "columns": ["prabbr", "ro_year", "geo_id_a", "geo_id_b"]
     },
     "lineages": {
       "rows": 2098,
       "bytes": 90855,
-      "sha256": "dfb3a98fb36fd7ef813888e3a7f3081937466e6604e1e5dccfc0217d5d2eddcf",
+      "sha256": "0b71edefbd47a87532e458e7c6b118d951968b42d02088f6b86835aabe124749",
       "columns": ["lineage_id", "prabbr", "first_eyear", "last_eyear", "n_contests", "n_elections", "n_branches_max", "names_en", "names_fr", "lineage_basis", "has_floterial", "n_eras", "n_polygons"]
     }
   },
   "inputs": {
-    "processed/NB_03 comparison/NB_ALLYEARS_table1_district.csv": "2026-09-23T16:44:05Z",
-    "processed/NB_03 comparison/NB_ALLYEARS_table2_candidate.csv": "2026-09-23T16:44:05Z",
-    "processed/PE_03 comparison/PE_ALLYEARS_table1_district.csv": "2026-09-22T19:34:12Z",
-    "processed/PE_03 comparison/PE_ALLYEARS_table2_candidate.csv": "2026-09-22T19:34:12Z",
+    "processed/NB_03 comparison/NB_ALLYEARS_table1_district.csv": "2026-09-24T00:54:52Z",
+    "processed/NB_03 comparison/NB_ALLYEARS_table2_candidate.csv": "2026-09-24T00:54:52Z",
+    "processed/PE_03 comparison/PE_ALLYEARS_table1_district.csv": "2026-09-24T00:44:15Z",
+    "processed/PE_03 comparison/PE_ALLYEARS_table2_candidate.csv": "2026-09-24T00:44:15Z",
     "processed/representation_orders/representation_order_lookup.csv": "2026-08-23T13:05:17Z",
     "review/atlas/district_names_fr.csv": "2026-09-23T00:25:39Z",
     "review/atlas/election_dates.csv": "2026-09-23T00:25:39Z",
@@ -241,22 +241,22 @@
     "review/party_family_lookup/NB_party_family_lookup.xlsx": "2026-09-10T16:09:57Z",
     "review/party_family_lookup/PE_party_family_lookup.xlsx": "2026-08-24T14:32:12Z",
     "review/source_descriptions.xlsx": "2026-09-21T16:33:20Z",
-    "processed/AB_03 comparison/AB_ALLYEARS_table1_district.csv": "2026-09-18T23:00:49Z",
-    "processed/AB_03 comparison/AB_ALLYEARS_table2_candidate.csv": "2026-09-18T23:00:49Z",
-    "processed/BC_03 comparison/BC_ALLYEARS_table1_district.csv": "2026-09-18T22:59:48Z",
-    "processed/BC_03 comparison/BC_ALLYEARS_table2_candidate.csv": "2026-09-18T22:59:48Z",
-    "processed/MB_03 comparison/MB_ALLYEARS_table1_district.csv": "2026-09-18T23:03:11Z",
-    "processed/MB_03 comparison/MB_ALLYEARS_table2_candidate.csv": "2026-09-18T23:03:11Z",
-    "processed/NL_03 comparison/NL_ALLYEARS_table1_district.csv": "2026-09-18T23:12:38Z",
-    "processed/NL_03 comparison/NL_ALLYEARS_table2_candidate.csv": "2026-09-18T23:12:38Z",
-    "processed/NS_03 comparison/NS_ALLYEARS_table1_district.csv": "2026-09-23T19:01:15Z",
-    "processed/NS_03 comparison/NS_ALLYEARS_table2_candidate.csv": "2026-09-23T19:01:15Z",
-    "processed/ON_03 comparison/ON_ALLYEARS_table1_district.csv": "2026-09-23T15:48:21Z",
-    "processed/ON_03 comparison/ON_ALLYEARS_table2_candidate.csv": "2026-09-23T15:48:21Z",
-    "processed/QC_03 comparison/QC_ALLYEARS_table1_district.csv": "2026-09-23T12:02:16Z",
-    "processed/QC_03 comparison/QC_ALLYEARS_table2_candidate.csv": "2026-09-23T12:02:16Z",
-    "processed/SK_03 comparison/SK_ALLYEARS_table1_district.csv": "2026-09-18T23:01:46Z",
-    "processed/SK_03 comparison/SK_ALLYEARS_table2_candidate.csv": "2026-09-18T23:01:46Z",
+    "processed/AB_03 comparison/AB_ALLYEARS_table1_district.csv": "2026-09-24T00:56:33Z",
+    "processed/AB_03 comparison/AB_ALLYEARS_table2_candidate.csv": "2026-09-24T00:56:33Z",
+    "processed/BC_03 comparison/BC_ALLYEARS_table1_district.csv": "2026-09-24T00:43:31Z",
+    "processed/BC_03 comparison/BC_ALLYEARS_table2_candidate.csv": "2026-09-24T00:43:31Z",
+    "processed/MB_03 comparison/MB_ALLYEARS_table1_district.csv": "2026-09-24T00:58:09Z",
+    "processed/MB_03 comparison/MB_ALLYEARS_table2_candidate.csv": "2026-09-24T00:58:09Z",
+    "processed/NL_03 comparison/NL_ALLYEARS_table1_district.csv": "2026-09-24T00:46:07Z",
+    "processed/NL_03 comparison/NL_ALLYEARS_table2_candidate.csv": "2026-09-24T00:46:07Z",
+    "processed/NS_03 comparison/NS_ALLYEARS_table1_district.csv": "2026-09-24T00:45:32Z",
+    "processed/NS_03 comparison/NS_ALLYEARS_table2_candidate.csv": "2026-09-24T00:45:32Z",
+    "processed/ON_03 comparison/ON_ALLYEARS_table1_district.csv": "2026-09-24T00:50:37Z",
+    "processed/ON_03 comparison/ON_ALLYEARS_table2_candidate.csv": "2026-09-24T00:50:37Z",
+    "processed/QC_03 comparison/QC_ALLYEARS_table1_district.csv": "2026-09-24T00:54:22Z",
+    "processed/QC_03 comparison/QC_ALLYEARS_table2_candidate.csv": "2026-09-24T00:54:22Z",
+    "processed/SK_03 comparison/SK_ALLYEARS_table1_district.csv": "2026-09-24T00:55:43Z",
+    "processed/SK_03 comparison/SK_ALLYEARS_table2_candidate.csv": "2026-09-24T00:55:43Z",
     "review/party_family_lookup/AB_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
     "review/party_family_lookup/BC_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",
     "review/party_family_lookup/MB_party_family_lookup.xlsx": "2026-09-23T19:27:41Z",

@@ -4,7 +4,7 @@ Provincial general elections in Canada since 1867: every contest and every candi
 
 **Site:** https://zacktayloruwo.github.io/atlas-canada-elections/
 
-This repository holds the published site: a static web app (Svelte, DuckDB-WASM) and the data it reads. It is written by the publish step of the Provincial Elections Dataset (PED) pipeline; nothing is edited here by hand. Build `20260923T194451Z`, pipeline commit `75a255c`, built 2026-09-23T19:44:51Z.
+This repository holds the published site: a static web app (Svelte, DuckDB-WASM) and the data it reads. It is written by the publish step of the Provincial Elections Dataset (PED) pipeline; nothing is edited here by hand. Build `20260924T011050Z`, pipeline commit `9c516bd`, built 2026-09-24T01:10:50Z.
 
 ## Using the data
 
@@ -50,4 +50,4 @@ Every source is described on the site's About page, with citation and publisher,
 
 ## Citing
 
-Taylor, Zack. *Atlas of Canadian Elections: provincial elections in Canada since 1867.* Build 20260923T194451Z. Western University.
+Taylor, Zack. *Atlas of Canadian Elections: provincial elections in Canada since 1867.* Build 20260924T011050Z. Western University.
